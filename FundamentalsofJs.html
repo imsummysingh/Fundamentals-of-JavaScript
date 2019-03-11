@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fundamentals of JS</title>
+</head>
+<body>
+    <h1 id="h01" style="text-align:center; color:red">Fundamentals Of JavaScript</h1>
+    <button onclick="myfunc()">Click Me 1</button>
+    <!-- <button onclick="this.innerHTML = 'You Clicked!!!'">Click Me 2</button> -->
+    <button onclick="changeText(this)">Click Me 3</button>
+    <button onclick="changeHeading(this)">Click Me 4</button>
+
+    <script>
+
+        function changeText(id) {
+            id.innerHTML = "You Clicked";
+        }
+
+        function  changeHeading(id) {
+            document.getElementById('h01').innerHTML="You are being Clicked!!!";
+        }
+
+
+        // alert("Welcome to Fundamental course");
+
+        //Numbers
+
+        // var num1 = '10';
+        // var num2 = 20;
+
+        //variable can contains letter, underscore, dollar sign, numbers
+        //begin with letter
+        //_$
+        //Case Sensitive
+
+        //alert('My fav number is: '+num2);
+        
+        // var test ='Hello';
+        // var Test = 'Hi';
+
+        // alert(Test);
+
+        //camelCase
+        // var myFav;
+
+        //Partialcase
+        // var MyFav;
+
+        //underscore style
+        // var my_fav;
+
+        //ARRAYS
+
+        //var colors = ['red','blue','green'];
+        //alert(colors);
+        //alert(colors[0]);
+        //alert(colors[3]);
+
+        //var colors = new Array('red','blue','green');
+        //alert(colors);    
+        //colors[3]='orange';
+        //alert(colors);
+        //colors.push('pink');
+        //alert(colors);
+
+        //var num = [0,1,2,3,5,6,4,'one','two'];
+        //alert(num);
+        //alert(num[1]+num[2]);
+        //alert(num[1]+num[7]);
+        //alert(num.length);
+        //alert(num.sort());
+        //alert(num.reverse());
+
+        //LOOPS
+
+        // for(var i=0;i<=10;i++)
+        // {
+        //     console.log("I love The Number: "+i);
+        // }
+
+        // var i=0;
+        // while(i<=10){
+        //     console.log("Hello Number: "+i);
+        //     i++;
+        // }
+
+        // var numbers = [11,22,33,44,55,66,77,88,99];
+        // numbers.forEach(function(numbers){
+        //     console.log(numbers);
+        // });
+
+        // var numbers = [11,22,33,44,55,66,77,88,99];
+        // numbers.reverse();
+        // for(var i=0;i<numbers.length;i++){
+        //     console.log(numbers[i]);
+        // }
+        
+        //Conditionals
+
+        // var i=100;
+        // var j=20;
+        // if(i<j){
+        //     console.log("i is smaller");
+        // }
+        // else{
+        //     console.log("J is smaller")
+        // }
+
+        // var fruit =  'lichi';
+
+        // switch(fruit){
+        //     case 'banana':alert('i love banana');
+        //     break;
+
+        //     case 'mango':alert('i love mango');
+        //     break;
+
+        //     case 'orange': alert('Oranges are okay');
+        //     break;
+
+        //     case 'apple': alert('i hate apple');
+        //     break;
+
+        //     default:alert('oops');
+        //     break;
+        // }
+
+        //object literals
+
+        // var person = {
+        //     fname : "summy",
+        //     lname : "singh",
+        //     age: 22,
+        //     love:['Game','Music','Food'],
+        //     address:{
+        //         flatNo:'D-401',
+        //         Building:'Golden Nest Society',
+        //         location:'Noida'
+        //     },
+        //     fullName: function(){
+        //         return this.fname+" "+this.lname;
+        //     }
+        // };
+
+        //console.log(person.love[1]);
+        //console.log(person.address.Building);
+        // console.log(person.fullName());
+
+        //object Constructor
+
+        // var apple = new Object();
+        // apple.color = 'red';
+        // apple.shape = 'round';
+        // apple.describe = function(){
+        //     return 'An Apple a day keeps Doctor Away which has ' +apple.color+ ' Color and have ' +apple.shape+ ' shape';
+        // }
+
+        // console.log(apple.describe());
+
+        //Constructor Pattern
+        
+        // function fruit(name,color,shape) {
+        //     this.name = name;
+        //     this.shape = shape;
+        //     this.color = color;
+        // }
+
+        // var apple = new fruit('apple','red','round');
+
+        // console.log(apple.color);
+
+        //Arrays of Object
+
+        // var user = [
+        //     {
+        //         name:'summy singh',
+        //         age:22
+        //     },
+        //     {
+        //         name:'Ranjeet Kumar',
+        //         age:24
+        //     },
+        //     {
+        //         name:'Shubham Gupta',
+        //         age:23
+        //     }
+        // ];
+        // console.log(user[0].name);
+
+
+        //EVENTS
+        function  myfunc() {
+            alert('Hello You Clicked Me');
+        }
+
+    </script>
+
+
+</body>
+</html>
